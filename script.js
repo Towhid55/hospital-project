@@ -68,6 +68,28 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // ====================== Doctor Modal ======================
+  // ====Filter option ====
+// Interactive Filtering
+  const departmentItems = document.querySelectorAll('.department-list li');
+  const doctorCards = document.querySelectorAll('.doctor-card');
+
+  departmentItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Update active state
+      departmentItems.forEach(i => i.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter doctors
+      const department = this.dataset.department;
+      doctorCards.forEach(card => {
+        card.style.display = (department === 'all' || card.dataset.department === department) 
+          ? 'block' : 'none';
+      });
+    });
+  });
+
+
+
   const initDoctorModal = () => {
     const scheduleData = {
        "ডা: মোছাম্মৎ নায়লা হোসেন": [

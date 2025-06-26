@@ -39,36 +39,69 @@
   </div>
 </nav>
 
-<!-- Doctors Grid Section -->
-<section class="doctors">
-  <!-- Reusable Modal -->
-  <div id="scheduleModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModalBtn">&times;</span>
-      <h3 style="text-align: center; margin-bottom: 5px;">Available Schedule</h3>
-      <ul id="scheduleList"></ul>
-    </div>
-  </div>
-  <!-- Modal End -->
-
+    <!-- Department Filter Dropdown -->
+<!-- New Filtering Layout -->
+<section class="doctors-section">
   <div class="container">
-    <h2 style="text-align:center; margin-bottom: 30px;">Our Doctors</h2>
-
-    <div class="doctors-grid">
-      <!-- Doctor Card -->
-      <div class="doctor-card">
-        <img src="img/doctor1.jpg" alt="Doctor 1">
-        <h4>Dr. Sanjeeda Akhter</h4>
-        <p>Cardiology</p>
-        <p>Specialist in Heart Diseases</p>
-        <button class="btn schedule-btn">View Schedule</button>
+    <h2>Our Specialist Doctors</h2>
+    
+    <div class="doctors-layout">
+      <!-- Department Filter Sidebar -->
+      <div class="department-sidebar">
+        <div class="sidebar-header">
+          <i class="fas fa-stethoscope"></i>
+          <h3>Departments</h3>
+        </div>
+        <ul class="department-list">
+          <li class="active" data-department="all">
+            <i class="fas fa-star"></i> All Specialists
+          </li>
+          <li data-department="cardiology">
+            <i class="fas fa-heartbeat"></i> Cardiology
+          </li>
+          <li data-department="neurology">
+            <i class="fas fa-brain"></i> Neurology
+          </li>
+          <li data-department="orthopedics">
+            <i class="fas fa-bone"></i> Orthopedics
+          </li>
+          <li data-department="pediatrics">
+            <i class="fas fa-baby"></i> Pediatrics
+          </li>
+        </ul>
       </div>
 
-      <div class="doctor-card">
-        <img src="img/doctor2.jpg" alt="Dr. Jane Doe">
-        <h4>Dr. Jane Doe</h4>
-        <p>Neurology</p>
-        <p>Specialist in Brain & Nerves</p>
+      
+      <!-- Doctors Grid -->
+      <div class="doctors-grid">
+        <!-- Cardiology Doctor -->
+        <div class="doctor-card" data-department="cardiology">
+          <img src="img/doctor1.jpg" alt="Dr. Afsana Begum">
+          <div class="doctor-info">
+            <h4>Dr. Afsana Begum</h4>
+            <p class="department-tag cardiology">Cardiology</p>
+            <p>Specialist in Heart Diseases</p>
+            <button class="btn schedule-btn">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Neurology Doctor -->
+        <div class="doctor-card" data-department="neurology">
+          <img src="img/doctor2.jpg" alt="Dr. Kabir Hossain">
+          <div class="doctor-info">
+            <h4>Dr. Kabir Hossain</h4>
+            <p class="department-tag neurology">Neurology</p>
+            <p>Brain & Nerve Specialist</p>
+            <button class="btn schedule-btn">View Schedule</button>
+          </div>
+        </div>
+
+        <!-- Add more doctors... -->
+         <div class="doctor-card" data-department="cardiology">
+        <img src="img/doctor1.jpg" alt="Doctor 1">
+        <h4>Dr. Sanjeeda Akhter</h4>
+        <p class="department-tag cardiology">Cardiology</p>
+        <p>Specialist in Heart Diseases</p>
         <button class="btn schedule-btn">View Schedule</button>
       </div>
 
@@ -96,32 +129,21 @@
         <button class="btn schedule-btn">View Schedule</button>
       </div>
 
-      <div class="doctor-card">
-        <img src="img/doctor6.jpg" alt="Dr. Rahman">
-        <h4>Dr. Rahman</h4>
-        <p>ENT</p>
-        <p>Ear, Nose & Throat Specialist</p>
-        <button class="btn schedule-btn">View Schedule</button>
-      </div>
-
-      <div class="doctor-card">
-        <img src="img/doc7.jpg" alt="Dr. Akter">
-        <h4>Dr. Akter</h4>
-        <p>Gynecology</p>
-        <p>Women’s Health Expert</p>
-        <button class="btn schedule-btn">View Schedule</button>
-      </div>
-
-      <div class="doctor-card">
-        <img src="img/doc8.jpg" alt="Dr. Islam">
-        <h4>Dr. Islam</h4>
-        <p>Urology</p>
-        <p>Kidney & Urinary Specialist</p>
-        <button class="btn schedule-btn">View Schedule</button>
       </div>
     </div>
   </div>
 </section>
+
+
+  <!-- Reusable Modal -->
+  <div id="scheduleModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <h3 style="text-align: center; margin-bottom: 5px;">Available Schedule</h3>
+      <ul id="scheduleList"></ul>
+    </div>
+  </div>
+  <!-- Modal End -->
 
 
  <!-- Footer -->
@@ -177,5 +199,6 @@
 
  
   <script src="script.js"></script>
+  <!-- <script src="script1.js"></script> -->
 </body>
 </html>

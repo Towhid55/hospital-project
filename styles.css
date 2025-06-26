@@ -194,7 +194,127 @@ ul {
   }
 }
 
-/* Hero Section */
+/* filter Section */
+/* ===== Sidebar Filter Layout ===== */
+.doctors-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.department-sidebar {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 64, 128, 0.08);
+  padding: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar-header i {
+  color: #0073e6;
+  font-size: 20px;
+}
+
+.sidebar-header h3 {
+  color: #004080;
+  margin: 0;
+}
+
+.department-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.department-list li {
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.department-list li i {
+  width: 20px;
+  color: #666;
+}
+
+.department-list li:hover {
+  background: #f0f7ff;
+  color: #0073e6;
+}
+
+.department-list li.active {
+  background: #0073e6;
+  color: white;
+}
+
+.department-list li.active i {
+  color: white;
+}
+
+/* Department Tags */
+.department-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.department-tag.cardiology {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.department-tag.neurology {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .doctors-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .department-sidebar {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Doctors card start */
 .hero {
   position: relative;
   height: 450px;
