@@ -384,7 +384,12 @@ ul {
   line-height: 1.6;
 }
 
-
+.departments-of-doctors{
+text-align: center;
+font-size: 12px;
+background-color: lightblue;
+color: darkblue;
+}
 
 
 /* Departments Section */
@@ -1117,6 +1122,9 @@ footer .container {
 
 /* Doctors Content */
 /* Doctors Grid Styles */
+.Specialist-Doctors{
+  text-align: center;
+}
 .doctors {
   padding: 60px 0;
   background-color: #f8fafc;
