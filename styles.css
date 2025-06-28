@@ -271,7 +271,7 @@ ul {
 /* Department Tags */
 .department-tag {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 5px 7.5px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
@@ -388,7 +388,7 @@ ul {
 text-align: center;
 font-size: 12px;
 background-color: lightblue;
-color: darkblue;
+color: rgb(0, 0, 0);
 }
 
 
