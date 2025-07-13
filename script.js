@@ -173,6 +173,11 @@ document.addEventListener('DOMContentLoaded', function () {
       "ডাঃ রাকিবুল ইসলাম": [
         " রোগী দেখেন ঃ শনি থেকে বুধবার বিকাল ৩টা থেকে..."
       ],
+      
+      "ডাঃ শামীম রেজা": [
+        " রোগী দেখেন ঃ প্রতি রবিবার বিকেল ৪টা থেকে..."
+      ],
+
     };
 
     const modal = document.getElementById("scheduleModal");
